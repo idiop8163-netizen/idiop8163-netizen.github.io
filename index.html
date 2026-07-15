@@ -173,6 +173,65 @@
           </div>
         </div>
 
+        <!-- Fragrance Quiz Section -->
+        <div class="quiz-section">
+          <h2>Find Your Perfect Fragrance</h2>
+          <p class="quiz-intro">Answer a few questions to discover which scent profile matches your personality!</p>
+          
+          <div class="quiz-container">
+            <div class="quiz-question active" data-question="1">
+              <h3>What's your personality style?</h3>
+              <div class="quiz-options">
+                <button class="quiz-btn" data-value="fresh">Fresh & Modern</button>
+                <button class="quiz-btn" data-value="bold">Bold & Confident</button>
+                <button class="quiz-btn" data-value="elegant">Elegant & Sophisticated</button>
+              </div>
+            </div>
+
+            <div class="quiz-question" data-question="2">
+              <h3>When do you prefer to wear cologne?</h3>
+              <div class="quiz-options">
+                <button class="quiz-btn" data-value="daily">Daily - All occasions</button>
+                <button class="quiz-btn" data-value="evening">Evening - Special events</button>
+                <button class="quiz-btn" data-value="outdoor">Outdoor - Active lifestyle</button>
+              </div>
+            </div>
+
+            <div class="quiz-question" data-question="3">
+              <h3>What scent notes appeal to you?</h3>
+              <div class="quiz-options">
+                <button class="quiz-btn" data-value="citrus">Citrus & Fresh</button>
+                <button class="quiz-btn" data-value="woody">Woody & Earthy</button>
+                <button class="quiz-btn" data-value="spicy">Spicy & Warm</button>
+              </div>
+            </div>
+
+            <div class="quiz-question" data-question="4">
+              <h3>How long do you want your fragrance to last?</h3>
+              <div class="quiz-options">
+                <button class="quiz-btn" data-value="light">Light (2-3 hours)</button>
+                <button class="quiz-btn" data-value="moderate">Moderate (4-6 hours)</button>
+                <button class="quiz-btn" data-value="long">Long-lasting (8+ hours)</button>
+              </div>
+            </div>
+
+            <div class="quiz-result" id="quiz-result">
+              <h3>Your Perfect Match!</h3>
+              <div class="result-content">
+                <p id="result-text"></p>
+                <p id="result-description"></p>
+                <button class="button primary" onclick="resetQuiz()" style="margin-top: 1rem;">Take Quiz Again</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-navigation">
+            <button class="quiz-nav-btn prev-btn" id="prev-btn" style="display: none;">← Previous</button>
+            <span class="quiz-progress"><span id="current-q">1</span>/<span id="total-q">4</span></span>
+            <button class="quiz-nav-btn next-btn" id="next-btn">Next →</button>
+          </div>
+        </div>
+
         <p class="small" data-status>Ready to explore.</p>
         <button type="button" data-action="toggle">Refresh mood</button>
       </section>
