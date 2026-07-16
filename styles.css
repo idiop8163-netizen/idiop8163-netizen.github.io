@@ -550,6 +550,51 @@ button:hover {
   gap: 1rem;
 }
 
+.education-section {
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.education-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.education-section p {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.education-card {
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: rgba(124, 147, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.education-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .compare-item {
   padding: 1.2rem;
   border-radius: 12px;
