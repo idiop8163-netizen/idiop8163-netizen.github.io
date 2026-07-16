@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#fff3f8;
+    text-align:center;
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+select{
+    width:200px;
+    padding:8px;
+}
+
+button{
+    padding:10px 20px;
+    background:#ff4fa0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#d63384;
+}
+
+#result{
+    margin-top:25px;
+    font-size:20px;
+    font-weight:bold;
+}

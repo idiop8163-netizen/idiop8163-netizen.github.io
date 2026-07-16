@@ -1,242 +1,54 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dior Sauvage</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <span class="badge">Fragrance spotlight</span>
-        <h1>Dior Sauvage</h1>
-        
-        <!-- Image Carousel -->
-        <div class="image-carousel">
-          <div class="carousel-container">
-            <div class="carousel-slide active" style="background: linear-gradient(135deg, rgba(196, 30, 58, 0.3), rgba(139, 20, 40, 0.3)), url('https://images.unsplash.com/photo-1547924537-c3a375f00b54?w=1200&h=400&fit=crop') center/cover;">
-              <span class="slide-label">Eau de Parfum</span>
-            </div>
-            <div class="carousel-slide" style="background: linear-gradient(135deg, rgba(26, 26, 46, 0.3), rgba(22, 33, 62, 0.3)), url('https://images.unsplash.com/photo-1563170351-be82bc888341?w=1200&h=400&fit=crop') center/cover;">
-              <span class="slide-label">Signature Scent</span>
-            </div>
-            <div class="carousel-slide" style="background: linear-gradient(135deg, rgba(157, 78, 221, 0.3), rgba(90, 24, 154, 0.3)), url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&h=400&fit=crop') center/cover;">
-              <span class="slide-label">Luxury Fragrance</span>
-            </div>
-            <div class="carousel-slide" style="background: linear-gradient(135deg, rgba(255, 183, 3, 0.3), rgba(251, 133, 0, 0.3)), url('https://images.unsplash.com/photo-1580904381456-19b78b88db6b?w=1200&h=400&fit=crop') center/cover;">
-              <span class="slide-label">Premium Quality</span>
-            </div>
-          </div>
-          <div class="carousel-controls">
-            <button class="carousel-btn prev" data-direction="prev" aria-label="Previous slide">❮</button>
-            <button class="carousel-btn next" data-direction="next" aria-label="Next slide">❯</button>
-          </div>
-          <div class="carousel-dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-            <span class="dot" data-index="3"></span>
-          </div>
-        </div>
-        
-        <p class="lead">
-          Discover the iconic scent through trusted sources with a refined, modern layout.
-        </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Perfume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <div class="actions">
-          <a class="button primary" href="https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html" target="_blank" rel="noreferrer">Explore now</a>
-          <a class="button secondary" href="#features">Why it stands out</a>
-        </div>
+    <h1>🌸 Build Your Own Perfume 🌸</h1>
 
-        <div class="links">
-          <a href="https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html" target="_blank" rel="noreferrer">
-            Official Dior Website <span>↗</span>
-          </a>
-          <a href="https://www.fragrantica.com/perfume/Dior/Sauvage-Eau-de-Parfum-48100.html" target="_blank" rel="noreferrer">
-            Fragrantica Review <span>↗</span>
-          </a>
-          <a href="https://en.wikipedia.org/wiki/Sauvage_(fragrance)" target="_blank" rel="noreferrer">
-            Wikipedia Entry <span>↗</span>
-          </a>
-        </div>
+    <div class="container">
 
-        <div class="feature-grid" id="features">
-          <article class="card">
-            <h2>Fresh and bold</h2>
-            <p>A crisp scent profile that feels confident and modern.</p>
-          </article>
-          <article class="card">
-            <h2>Popular choice</h2>
-            <p>One of the most recognizable fragrances for everyday wear.</p>
-          </article>
-          <article class="card">
-            <h2>Easy to explore</h2>
-            <p>Quick links make it simple to learn more in just a few clicks.</p>
-          </article>
-        </div>
+        <label>Choose a Top Note:</label>
+        <select id="topNote">
+            <option>Bergamot</option>
+            <option>Lemon</option>
+            <option>Orange</option>
+            <option>Mint</option>
+        </select>
 
-        <!-- Scent Pyramid Section -->
-        <div class="scent-section">
-          <h2>Scent Pyramid</h2>
-          <div class="pyramid">
-            <div class="pyramid-level top" data-tooltip="These notes appear first, usually lasting 5-15 minutes">
-              <h3>Top Notes</h3>
-              <p>Bergamot, Pepper</p>
-            </div>
-            <div class="pyramid-level middle" data-tooltip="The heart of the fragrance, develops after 15 minutes and lasts 3-5 hours">
-              <h3>Middle Notes</h3>
-              <p>Ambroxan, Cedar</p>
-            </div>
-            <div class="pyramid-level base" data-tooltip="The foundation, develops after 30 minutes and lasts 6+ hours">
-              <h3>Base Notes</h3>
-              <p>Driftwood, Tonka Bean</p>
-            </div>
-          </div>
-        </div>
+        <br><br>
 
-        <!-- Product Specs -->
-        <div class="specs-grid">
-          <div class="spec-card">
-            <h3>Longevity</h3>
-            <p class="spec-value">8-10 hours</p>
-            <p class="spec-desc">Excellent all-day wear</p>
-          </div>
-          <div class="spec-card">
-            <h3>Sillage</h3>
-            <p class="spec-value">High</p>
-            <p class="spec-desc">Projects well in close proximity</p>
-          </div>
-          <div class="spec-card">
-            <h3>Best For</h3>
-            <p class="spec-value">Any Season</p>
-            <p class="spec-desc">Versatile year-round fragrance</p>
-          </div>
-          <div class="spec-card">
-            <h3>Type</h3>
-            <p class="spec-value">Eau de Parfum</p>
-            <p class="spec-desc">15-20% fragrance concentration</p>
-          </div>
-        </div>
+        <label>Choose a Middle Note:</label>
+        <select id="middleNote">
+            <option>Rose</option>
+            <option>Jasmine</option>
+            <option>Lavender</option>
+            <option>Lily</option>
+        </select>
 
-        <!-- Product Gallery -->
-        <div class="gallery-section">
-          <h2>Product Gallery</h2>
-          <div class="gallery-grid">
-            <div class="gallery-item" style="background: linear-gradient(135deg, rgba(212, 20, 90, 0.2), rgba(251, 176, 59, 0.2)), url('https://images.unsplash.com/photo-1548695682-dbc8f6ad76e8?w=400&h=400&fit=crop') center/cover;">
-              <div class="gallery-overlay">
-                <p>Classic Edition</p>
-              </div>
-            </div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2)), url('https://images.unsplash.com/photo-1594925662615-2e6e46f6bf63?w=400&h=400&fit=crop') center/cover;">
-              <div class="gallery-overlay">
-                <p>Premium Blend</p>
-              </div>
-            </div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.2), rgba(245, 87, 108, 0.2)), url('https://images.unsplash.com/photo-1615109398623-88226acb758d?w=400&h=400&fit=crop') center/cover;">
-              <div class="gallery-overlay">
-                <p>Signature Collection</p>
-              </div>
-            </div>
-            <div class="gallery-item" style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.2), rgba(0, 242, 254, 0.2)), url('https://images.unsplash.com/photo-1514291840714-51cecaf55baf?w=400&h=400&fit=crop') center/cover;">
-              <div class="gallery-overlay">
-                <p>Exclusive Launch</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <br><br>
 
-        <!-- Interactive Compare -->
-        <div class="compare-section">
-          <h2>Why Sauvage Stands Out</h2>
-          <div class="comparison-grid">
-            <div class="compare-item">
-              <div class="compare-icon">⭐</div>
-              <h3>Iconic Scent</h3>
-              <p>One of the best-selling fragrances globally since 2015</p>
-            </div>
-            <div class="compare-item">
-              <div class="compare-icon">💰</div>
-              <h3>Great Value</h3>
-              <p>Premium quality at an accessible price point</p>
-            </div>
-            <div class="compare-item">
-              <div class="compare-icon">👃</div>
-              <h3>Signature Scent</h3>
-              <p>Instantly recognizable and universally loved</p>
-            </div>
-            <div class="compare-item">
-              <div class="compare-icon">✨</div>
-              <h3>Long-Lasting</h3>
-              <p>Stays strong throughout the entire day</p>
-            </div>
-          </div>
-        </div>
+        <label>Choose a Base Note:</label>
+        <select id="baseNote">
+            <option>Vanilla</option>
+            <option>Sandalwood</option>
+            <option>Cedarwood</option>
+            <option>Amber</option>
+        </select>
 
-        <!-- Fragrance Quiz Section -->
-        <div class="quiz-section">
-          <h2>Find Your Perfect Fragrance</h2>
-          <p class="quiz-intro">Answer a few questions to discover which scent profile matches your personality!</p>
-          
-          <div class="quiz-container">
-            <div class="quiz-question active" data-question="1">
-              <h3>What's your personality style?</h3>
-              <div class="quiz-options">
-                <button class="quiz-btn" data-value="fresh">Fresh & Modern</button>
-                <button class="quiz-btn" data-value="bold">Bold & Confident</button>
-                <button class="quiz-btn" data-value="elegant">Elegant & Sophisticated</button>
-              </div>
-            </div>
+        <br><br>
 
-            <div class="quiz-question" data-question="2">
-              <h3>When do you prefer to wear cologne?</h3>
-              <div class="quiz-options">
-                <button class="quiz-btn" data-value="daily">Daily - All occasions</button>
-                <button class="quiz-btn" data-value="evening">Evening - Special events</button>
-                <button class="quiz-btn" data-value="outdoor">Outdoor - Active lifestyle</button>
-              </div>
-            </div>
+        <button onclick="createPerfume()">Create My Perfume</button>
 
-            <div class="quiz-question" data-question="3">
-              <h3>What scent notes appeal to you?</h3>
-              <div class="quiz-options">
-                <button class="quiz-btn" data-value="citrus">Citrus & Fresh</button>
-                <button class="quiz-btn" data-value="woody">Woody & Earthy</button>
-                <button class="quiz-btn" data-value="spicy">Spicy & Warm</button>
-              </div>
-            </div>
+        <div id="result"></div>
 
-            <div class="quiz-question" data-question="4">
-              <h3>How long do you want your fragrance to last?</h3>
-              <div class="quiz-options">
-                <button class="quiz-btn" data-value="light">Light (2-3 hours)</button>
-                <button class="quiz-btn" data-value="moderate">Moderate (4-6 hours)</button>
-                <button class="quiz-btn" data-value="long">Long-lasting (8+ hours)</button>
-              </div>
-            </div>
-
-            <div class="quiz-result" id="quiz-result">
-              <h3>Your Perfect Match!</h3>
-              <div class="result-content">
-                <p id="result-text"></p>
-                <p id="result-description"></p>
-                <button class="button primary" onclick="resetQuiz()" style="margin-top: 1rem;">Take Quiz Again</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="quiz-navigation">
-            <button class="quiz-nav-btn prev-btn" id="prev-btn" style="display: none;">← Previous</button>
-            <span class="quiz-progress"><span id="current-q">1</span>/<span id="total-q">4</span></span>
-            <button class="quiz-nav-btn next-btn" id="next-btn">Next →</button>
-          </div>
-        </div>
-
-        <p class="small" data-status>Ready to explore.</p>
-        <button type="button" data-action="toggle">Refresh mood</button>
-      </section>
-    </main>
+    </div>
 
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
