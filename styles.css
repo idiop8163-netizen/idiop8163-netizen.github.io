@@ -356,6 +356,74 @@ button:hover {
   border: 1px solid rgba(124, 147, 255, 0.2);
 }
 
+.perfume-section {
+  margin-top: 2.5rem;
+  padding: 2rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.perfume-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.perfume-copy {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.perfume-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.perfume-form label {
+  display: block;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.perfume-form select {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.perfume-result {
+  margin-top: 1.5rem;
+  padding: 1.35rem 1.25rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.perfume-result h3 {
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+
+.perfume-result p {
+  margin: 0.65rem 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.perfume-result .blend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .scent-section h2 {
   margin: 0 0 1.5rem;
   font-size: 1.4rem;

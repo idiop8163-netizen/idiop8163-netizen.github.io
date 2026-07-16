@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Your Own Perfume</title>
+  <link rel="stylesheet" href="perfume.css" />
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>🌸 Build Your Own Perfume</h1>
+      <p style="margin-bottom: 1.5rem; color: #5b2f69;">Choose your top, middle, and base notes to create a unique fragrance.</p>
+
+      <label for="topNote">Choose a Top Note:</label>
+      <select id="topNote" name="topNote">
+        <option>Bergamot</option>
+        <option>Lemon</option>
+        <option>Orange</option>
+        <option>Mint</option>
+      </select>
+
+      <label for="middleNote">Choose a Middle Note:</label>
+      <select id="middleNote" name="middleNote">
+        <option>Rose</option>
+        <option>Jasmine</option>
+        <option>Lavender</option>
+        <option>Lily</option>
+      </select>
+
+      <label for="baseNote">Choose a Base Note:</label>
+      <select id="baseNote" name="baseNote">
+        <option>Vanilla</option>
+        <option>Sandalwood</option>
+        <option>Cedarwood</option>
+        <option>Amber</option>
+      </select>
+
+      <button id="createButton" type="button">Create My Perfume</button>
+      <div id="result"></div>
+
+      <button type="button" onclick="window.location.href='index.html'" style="margin-top: 1.25rem; width: auto; background: rgba(142, 108, 197, 0.12); color: #5b2f69; border: 1px solid rgba(142, 108, 197, 0.4);">Back to website</button>
+    </div>
+  </main>
+  <script src="perfume.js"></script>
+</body>
+</html>

@@ -223,3 +223,21 @@ document.querySelectorAll('.quiz-btn').forEach(btn => {
     selectAnswer(this, question);
   });
 });
+
+function createPerfume() {
+  const topNote = document.getElementById('topNote').value;
+  const middleNote = document.getElementById('middleNote').value;
+  const baseNote = document.getElementById('baseNote').value;
+  const result = document.getElementById('perfume-result');
+
+  const blendName = `${topNote} · ${middleNote} · ${baseNote}`;
+  const description = `Your custom perfume combines ${topNote.toLowerCase()} as the bright top note, ${middleNote.toLowerCase()} at the heart, and ${baseNote.toLowerCase()} for a warm, lingering finish.`;
+
+  result.innerHTML = `
+    <h3>✨ Your Perfume is Ready!</h3>
+    <p>${description}</p>
+    <span class="blend">Blend: ${blendName}</span>
+  `;
+}
+
+document.getElementById('createPerfumeBtn').addEventListener('click', createPerfume);
