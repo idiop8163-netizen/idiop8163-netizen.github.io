@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="perfume.css" />
 </head>
 <body>
-  <main>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <main id="main-content">
     <div class="container">
+      <nav class="top-nav" aria-label="Page sections">
+        <a href="index.html">Back to home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <h1>🌸 Build Your Own Perfume</h1>
-      <p style="margin-bottom: 1.5rem; color: #5b2f69;">Choose your top, middle, and base notes to create a unique fragrance.</p>
+      <p class="intro">Choose your top, middle, and base notes to create a unique fragrance.</p>
 
       <label for="topNote">Choose a Top Note:</label>
       <select id="topNote" name="topNote">
@@ -37,9 +43,21 @@
       </select>
 
       <button id="createButton" type="button">Create My Perfume</button>
-      <div id="result"></div>
+      <div id="result" role="status" aria-live="polite"></div>
 
-      <button type="button" onclick="window.location.href='index.html'" style="margin-top: 1.25rem; width: auto; background: rgba(142, 108, 197, 0.12); color: #5b2f69; border: 1px solid rgba(142, 108, 197, 0.4);">Back to website</button>
+      <section class="info-section" id="about" aria-labelledby="about-title">
+        <article class="info-card">
+          <h2 id="about-title">About this page</h2>
+          <p>This interactive page lets you experiment with fragrance notes and create a custom scent profile in a playful, creative way.</p>
+        </article>
+        <article class="info-card" id="contact">
+          <h2>Contact</h2>
+          <p>Have ideas for new notes or a fragrance style? Share them with us.</p>
+          <a class="button-link" href="mailto:hello@fragranceproject.com">Email us</a>
+        </article>
+      </section>
+
+      <button type="button" onclick="window.location.href='index.html'" class="secondary-btn">Back to website</button>
     </div>
   </main>
   <script src="perfume.js"></script>

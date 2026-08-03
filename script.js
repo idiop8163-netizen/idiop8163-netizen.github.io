@@ -10,6 +10,7 @@ if (button && status) {
 
     status.textContent = nextText;
     button.textContent = nextText === 'Ready to explore.' ? 'Refresh mood' : 'Reset mood';
+    button.setAttribute('aria-pressed', nextText !== 'Ready to explore.');
     
     button.style.animation = 'none';
     setTimeout(() => {

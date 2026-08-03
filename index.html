@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content">
       <section class="hero">
         <span class="badge">Fragrance spotlight</span>
+        <nav class="top-nav" aria-label="Page sections">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
         <h1>Dior Sauvage</h1>
         
         <!-- Image Carousel -->
@@ -322,8 +328,22 @@
           <div id="perfume-result" class="perfume-result"></div>
         </div>
 
-        <p class="small" data-status>Ready to explore.</p>
-        <button type="button" data-action="toggle">Refresh mood</button>
+        <section class="info-section" id="about" aria-labelledby="about-title">
+          <div class="info-grid">
+            <article class="info-card">
+              <h2 id="about-title">About this experience</h2>
+              <p>This site celebrates modern fragrance culture through a mix of visual storytelling, fragrance education, and interactive exploration.</p>
+            </article>
+            <article class="info-card" id="contact">
+              <h2>Contact</h2>
+              <p>Have feedback or a fragrance suggestion? Reach out and share your thoughts.</p>
+              <a class="button secondary" href="mailto:hello@fragranceproject.com">Email us</a>
+            </article>
+          </div>
+        </section>
+
+        <p class="small" data-status role="status" aria-live="polite">Ready to explore.</p>
+        <button type="button" data-action="toggle" aria-pressed="false">Refresh mood</button>
       </section>
     </main>
 

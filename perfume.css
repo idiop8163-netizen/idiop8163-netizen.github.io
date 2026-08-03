@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -11,6 +15,24 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #f8f1ff 0%, #ffe6f3 45%, #fff9f2 100%);
   color: #2a2a35;
+  padding: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: #8e6cc5;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 .container {
@@ -25,6 +47,31 @@ body {
 h1 {
   margin: 0 0 1.25rem;
   font-size: clamp(2rem, 4vw, 2.75rem);
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.top-nav a {
+  color: #5b2f69;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.intro {
+  margin: 0 0 1.5rem;
+  color: #5b2f69;
   text-align: center;
 }
 
@@ -51,7 +98,8 @@ select:focus {
   box-shadow: 0 0 0 4px rgba(183, 107, 163, 0.12);
 }
 
-button {
+button,
+.secondary-btn {
   width: 100%;
   margin-top: 1.5rem;
   padding: 1rem 1.2rem;
@@ -66,10 +114,20 @@ button {
 }
 
 button:hover,
-button:focus-visible {
+button:focus-visible,
+.secondary-btn:hover,
+.secondary-btn:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(140, 71, 170, 0.2);
   opacity: 0.98;
+}
+
+.secondary-btn {
+  width: auto;
+  margin-top: 1.25rem;
+  background: rgba(142, 108, 197, 0.12);
+  color: #5b2f69;
+  border: 1px solid rgba(142, 108, 197, 0.4);
 }
 
 #result {
@@ -98,12 +156,61 @@ button:focus-visible {
   color: #5b2f69;
 }
 
+.info-section {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.info-card {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(43, 18, 46, 0.12);
+}
+
+.info-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.info-card p {
+  margin: 0 0 0.85rem;
+  line-height: 1.6;
+}
+
+.button-link {
+  display: inline-block;
+  color: #5b2f69;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(183, 107, 163, 0.35);
+  outline-offset: 2px;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 1.5rem;
   }
 
-  button {
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button,
+  .secondary-btn {
     padding: 0.95rem;
   }
 }
