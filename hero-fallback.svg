@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Sauvage Stories hero background</title>
+  <desc id="heroDesc">A stylized fragrance-themed hero background with gradient tones and abstract bottle silhouette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f" />
+      <stop offset="45%" stop-color="#16213f" />
+      <stop offset="100%" stop-color="#2f3a65" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c93ff" />
+      <stop offset="100%" stop-color="#3bd8c4" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)" />
+  <circle cx="300" cy="200" r="180" fill="rgba(255,255,255,0.06)" />
+  <circle cx="920" cy="160" r="120" fill="rgba(255,255,255,0.08)" />
+  <path d="M280 520 C330 460 420 420 520 420 C620 420 710 460 760 520 L760 580 C710 540 620 500 520 500 C420 500 330 540 280 580 Z" fill="rgba(255,255,255,0.08)" />
+  <path d="M760 140 C820 120 880 150 880 210 V420 C880 470 840 510 790 510 H440 C400 510 370 470 370 420 V210 C370 160 420 120 470 120 Z" fill="url(#highlight)" opacity="0.6" />
+  <path d="M510 160 H690 A30 30 0 0 1 720 190 V290 A30 30 0 0 1 690 320 H510 A30 30 0 0 1 480 290 V190 A30 30 0 0 1 510 160 Z" fill="rgba(255,255,255,0.14)" />
+  <text x="110" y="610" font-family="Inter, Arial, sans-serif" font-size="48" fill="rgba(255,255,255,0.92)" font-weight="700">Sauvage Stories</text>
+  <text x="110" y="660" font-family="Inter, Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.72)">A fragrance showcase</text>
+</svg>

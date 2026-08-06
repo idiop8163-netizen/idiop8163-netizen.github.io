@@ -3,20 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dior Sauvage</title>
+    <title>Sauvage Stories | Dior Sauvage Perfume Showcase</title>
+    <meta name="description" content="Sauvage Stories is an interactive Dior Sauvage fragrance showcase with scent education, a personality quiz, a custom perfume builder, and saved results." />
+    <meta name="keywords" content="Dior Sauvage, fragrance, perfume, scent quiz, perfume builder, olfactory journey, interactive showcase" />
+    <meta name="author" content="Sauvage Stories" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sauvage Stories | Dior Sauvage Perfume Showcase" />
+    <meta property="og:description" content="Explore the legendary Dior Sauvage through immersive storytelling, personalization, saved fragrance matches, and a custom perfume lab." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556228724-4a719d580b1f?w=1200&fit=crop" />
+    <meta property="og:url" content="https://idiop8163-netizen.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sauvage Stories | Dior Sauvage Perfume Showcase" />
+    <meta name="twitter:description" content="Explore the legendary Dior Sauvage through immersive storytelling, personalization, saved fragrance matches, and a custom perfume lab." />
+    <meta name="theme-color" content="#07111f" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <main id="main-content">
       <section class="hero">
-        <span class="badge">Fragrance spotlight</span>
+        <div class="hero-visual" aria-hidden="true">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="hero-fallback.svg">
+            <source src="https://cdn.coverr.co/videos/TTb7teJpHYU7nyaD1BODN7Gh8tz/1080p.mp4" type="video/mp4" />
+            <img src="hero-fallback.svg" alt="Sauvage Stories hero background" />
+          </video>
+          <noscript>
+            <div class="hero-fallback">
+              <img class="hero-fallback-image" src="hero-fallback.svg" alt="Sauvage Stories hero background" />
+              <div class="hero-fallback-copy">
+                <h2>Sauvage Stories</h2>
+                <p>An immersive fragrance showcase with story, quiz, and perfume lab features.</p>
+              </div>
+            </div>
+          </noscript>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="site-branding">
+          <a class="brand-link" href="index.html">
+            <span class="brand-mark">S</span>
+            <span class="brand-name">Sauvage Stories</span>
+          </a>
+        </div>
+        <div class="hero-top">
+          <span class="badge">Fragrance spotlight</span>
+          <div class="hero-controls">
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">Light</button>
+            <button id="audioToggle" class="theme-toggle" type="button" aria-label="Toggle ambient sound">Play ambiance</button>
+          </div>
+        </div>
         <nav class="top-nav" aria-label="Page sections">
-          <a href="#features">Features</a>
+          <a href="#project-features">Features</a>
+          <a href="#story">Story</a>
+          <a href="#features">Scent Highlights</a>
+          <a href="#perfume">Build</a>
+          <a href="perfume-game.html">Perfume Lab</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
         </nav>
-        <h1>Dior Sauvage</h1>
+        <h1>Sauvage Stories</h1>
+        <p class="hero-copy">Discover the Dior Sauvage legend through scent science, custom matches, and an immersive perfume lab made for modern fragrance lovers.</p>
         
         <!-- Image Carousel -->
         <div class="image-carousel">
@@ -50,6 +96,43 @@
           Discover the iconic scent through trusted sources with a refined, modern layout.
         </p>
 
+        <div id="project-features" class="project-features">
+          <h2>Project Features</h2>
+          <div class="feature-grid">
+            <article class="card">
+              <h2>Interactive Quiz</h2>
+              <p>Personalized fragrance match based on user choices.</p>
+            </article>
+            <article class="card">
+              <h2>Perfume Builder</h2>
+              <p>Create a custom scent profile with top, heart, and base notes.</p>
+            </article>
+            <article class="card">
+              <h2>Educational Content</h2>
+              <p>Learn fragrance notes, perfume types, and application tips.</p>
+            </article>
+          </div>
+        </div>
+
+        <section class="story-section animate-on-scroll" id="story">
+          <h2>Crafting the Sauvage story</h2>
+          <p>Behind every bottle is a narrative of raw desert winds, refined ingredients, and modern confidence. This section combines scent history, ingredient insights, and the emotion behind the fragrance.</p>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>Origin</h3>
+              <p>Dior Sauvage is inspired by wide-open landscapes and citrus brightness, giving a bold first impression.</p>
+            </article>
+            <article class="story-card">
+              <h3>Craft</h3>
+              <p>Notes like ambroxan, cedar, and pepper create a strong foundation with elegant depth.</p>
+            </article>
+            <article class="story-card">
+              <h3>Impact</h3>
+              <p>The scent is designed to be versatile, leaving a lasting presence across day and evening looks.</p>
+            </article>
+          </div>
+        </section>
+
         <div class="actions">
           <a class="button primary" href="https://www.dior.com/en_us/beauty/products/sauvage-eau-de-parfum-Y0785220.html" target="_blank" rel="noreferrer">Explore now</a>
           <a class="button secondary" href="#features">Why it stands out</a>
@@ -65,8 +148,12 @@
           <a href="https://en.wikipedia.org/wiki/Sauvage_(fragrance)" target="_blank" rel="noreferrer">
             Wikipedia Entry <span>↗</span>
           </a>
+          <a href="https://idiop8163-netizen.github.io/" target="_blank" rel="noreferrer">
+            Live Demo on GitHub Pages <span>↗</span>
+          </a>
         </div>
-
+      </section>
+      <section class="content">
         <div class="feature-grid" id="features">
           <article class="card">
             <h2>Fresh and bold</h2>
@@ -101,6 +188,26 @@
           </div>
         </div>
 
+        <section class="journey-section animate-on-scroll">
+          <h2>Scent Journey</h2>
+          <div class="journey-timeline">
+            <div class="journey-step top">
+              <span>Top Note</span>
+              <p>Fresh citrus and pepper create the first impression.</p>
+            </div>
+            <div class="journey-line"></div>
+            <div class="journey-step middle">
+              <span>Heart Note</span>
+              <p>Ambroxan and cedar define the signature core.</p>
+            </div>
+            <div class="journey-line"></div>
+            <div class="journey-step base">
+              <span>Base Note</span>
+              <p>Warm tonka bean and driftwood leave a lasting trail.</p>
+            </div>
+          </div>
+        </section>
+
         <!-- Product Specs -->
         <div class="specs-grid">
           <div class="spec-card">
@@ -125,8 +232,40 @@
           </div>
         </div>
 
+        <div class="compare-chart animate-on-scroll">
+          <h2>Compare to other popular fragrance styles</h2>
+          <div class="table-wrapper">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Profile</th>
+                  <th>Scent Character</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dior Sauvage</td>
+                  <td>Fresh, spicy, woody</td>
+                  <td>Day-to-night wear</td>
+                </tr>
+                <tr>
+                  <td>Fresh Citrus</td>
+                  <td>Bright, energetic, crisp</td>
+                  <td>Summer and outdoors</td>
+                </tr>
+                <tr>
+                  <td>Warm Spicy</td>
+                  <td>Rich, cozy, bold</td>
+                  <td>Evening and special events</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <!-- Featured Perfume Image -->
-        <div class="featured-product">
+        <div class="featured-product animate-on-scroll">
           <img src="https://images.unsplash.com/photo-1556228724-4a719d580b1f?w=900&h=900&fit=crop" alt="Dior Sauvage perfume bottle" />
           <div class="featured-copy">
             <span class="badge">Featured</span>
@@ -136,48 +275,77 @@
           </div>
         </div>
 
+        <section class="social-proof-section animate-on-scroll">
+          <div class="social-proof-header">
+            <h2>Trusted by fragrance lovers</h2>
+            <p>Real feedback from users who love the bold balance of freshness and depth.</p>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>“A remarkable signature scent that lasts. I feel confident every time I wear it.”</p>
+              <span>— Mia, fragrance enthusiast</span>
+            </article>
+            <article class="testimonial-card">
+              <p>“Perfect for date night and work. The fresh opening is my favorite part.”</p>
+              <span>— Jordan, style writer</span>
+            </article>
+            <article class="testimonial-card">
+              <p>“I appreciate the subtle warmth and amazing longevity. It feels premium without the fuss.”</p>
+              <span>— Alex, creative director</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="media-section animate-on-scroll">
+          <h2>Watch the fragrance story</h2>
+          <p>See how the iconic scent unfolds through imagery, notes, and modern design.</p>
+          <div class="media-wrapper">
+            <iframe src="https://www.youtube.com/embed/5q5x-abcm5E" title="Dior Sauvage fragrance story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
+
         <!-- Product Gallery -->
         <div class="gallery-section">
           <h2>Product Gallery</h2>
           <div class="gallery-grid">
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1062/400/400" alt="Perfume bottle in elegant lighting" />
+              <img loading="lazy" src="https://picsum.photos/id/1062/400/400" alt="Perfume bottle in elegant lighting" />
               <div class="gallery-overlay">
                 <p>Classic Perfume Bottle</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1025/400/400" alt="Fresh citrus fruits for perfume notes" />
+              <img loading="lazy" src="https://picsum.photos/id/1025/400/400" alt="Fresh citrus fruits for perfume notes" />
               <div class="gallery-overlay">
                 <p>Fresh Citrus Notes</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1059/400/400" alt="Warm woody textures for base notes" />
+              <img loading="lazy" src="https://picsum.photos/id/1059/400/400" alt="Warm woody textures for base notes" />
               <div class="gallery-overlay">
                 <p>Woody Warm Base</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1074/400/400" alt="Spices and warm tones for spicy notes" />
+              <img loading="lazy" src="https://picsum.photos/id/1074/400/400" alt="Spices and warm tones for spicy notes" />
               <div class="gallery-overlay">
                 <p>Spicy Warm Touch</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1050/400/400" alt="Premium perfume packaging and luxury finish" />
+              <img loading="lazy" src="https://picsum.photos/id/1050/400/400" alt="Premium perfume packaging and luxury finish" />
               <div class="gallery-overlay">
                 <p>Premium Blend</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1015/400/400" alt="Elegant fragrance collection with soft glow" />
+              <img loading="lazy" src="https://picsum.photos/id/1015/400/400" alt="Elegant fragrance collection with soft glow" />
               <div class="gallery-overlay">
                 <p>Signature Collection</p>
               </div>
             </div>
             <div class="gallery-item">
-              <img src="https://picsum.photos/id/1084/400/400" alt="Exclusive perfume release in premium setting" />
+              <img loading="lazy" src="https://picsum.photos/id/1084/400/400" alt="Exclusive perfume release in premium setting" />
               <div class="gallery-overlay">
                 <p>Exclusive Launch</p>
               </div>
@@ -210,6 +378,43 @@
               <p>Stays strong throughout the entire day</p>
             </div>
           </div>
+
+          <div class="benefits-table-section">
+            <h3>Why choose this fragrance?</h3>
+            <div class="benefits-table-wrapper">
+              <table class="benefits-table">
+                <thead>
+                  <tr>
+                    <th>Benefit</th>
+                    <th>Why it matters</th>
+                    <th>Sauvage advantage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>High longevity</td>
+                    <td>Keeps you confident all day without reapplying</td>
+                    <td>Strong staying power for 8+ hours</td>
+                  </tr>
+                  <tr>
+                    <td>Versatile wear</td>
+                    <td>Works for both casual and formal moments</td>
+                    <td>Balances freshness, spice, and depth</td>
+                  </tr>
+                  <tr>
+                    <td>Balanced projection</td>
+                    <td>Leaves a pleasant impression without overpowering</td>
+                    <td>Offers a refined presence in any setting</td>
+                  </tr>
+                  <tr>
+                    <td>Premium ingredients</td>
+                    <td>Feels luxurious and well-crafted on skin</td>
+                    <td>Features signature notes like bergamot and ambroxan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
 
         <!-- Perfume Education Section -->
@@ -219,20 +424,23 @@
           <div class="education-grid">
             <article class="education-card">
               <h3>Notes Explained</h3>
-              <p>Top notes are the first impression, middle notes form the heart, and base notes give the fragrance its lasting depth.</p>
+              <p>The top notes are the first impression, the heart notes carry the character, and the base notes are the long-lasting foundation.</p>
             </article>
             <article class="education-card">
               <h3>Fragrance Types</h3>
-              <p>Eau de Toilette is lighter, while Eau de Parfum is stronger and lasts longer. Perfume extract is the most concentrated option.</p>
+              <p>Eaux de Parfum deliver stronger, longer-lasting scent than Eau de Toilette, with a richer concentration of signature ingredients.</p>
             </article>
             <article class="education-card">
               <h3>How to Apply</h3>
-              <p>Spray on pulse points like wrists and neck. Avoid rubbing to preserve the fragrance structure.</p>
+              <p>Spray lightly on pulse points like wrist and neck. Let the fragrance develop naturally instead of rubbing for best projection.</p>
             </article>
             <article class="education-card">
-              <h3>Tips for Choosing</h3>
-              <p>Think about season, occasion, and personal style. Try scents on skin and allow them to develop before deciding.</p>
+              <h3>Why Sauvage Works</h3>
+              <p>Ambroxan and bergamot create a fresh yet bold profile, while cedarwood and tonka bean give it durable depth.</p>
             </article>
+          </div>
+          <div class="education-actions">
+            <button class="button secondary" id="openGlossary" type="button">Open fragrance glossary</button>
           </div>
         </div>
 
@@ -279,13 +487,20 @@
             </div>
 
             <div class="quiz-result" id="quiz-result">
-              <h3>Your Perfect Match!</h3>
-              <div class="result-content">
+              <div class="match-card">
+                <span class="match-label">Best Match</span>
+                <h3 id="result-title">Your fragrance match</h3>
                 <p id="result-text"></p>
                 <p id="result-description"></p>
-                <button class="button primary" onclick="resetQuiz()" style="margin-top: 1rem;">Take Quiz Again</button>
+                <p id="result-notes"></p>
+                <div class="quiz-result-actions">
+                  <button class="button primary" id="reset-quiz-btn" type="button">Take Quiz Again</button>
+                  <button class="button secondary" id="save-quiz-result" type="button">Save this match</button>
+                <button class="button secondary" id="try-again-btn" type="button">Try another mood</button>
+                </div>
               </div>
             </div>
+            <div class="compare-match-card" id="compare-card" aria-live="polite"></div>
           </div>
 
           <div class="quiz-navigation">
@@ -293,9 +508,12 @@
             <span class="quiz-progress"><span id="current-q">1</span>/<span id="total-q">4</span></span>
             <button class="quiz-nav-btn next-btn" id="next-btn">Next →</button>
           </div>
+          <div class="saved-result-card" id="saved-result" aria-live="polite"></div>
+          <div class="saved-result-card" id="saved-matches" aria-live="polite"></div>
+          <div class="history-result-card" id="match-history" aria-live="polite"></div>
         </div>
 
-        <div class="perfume-section">
+        <div class="perfume-section" id="perfume">
           <h2>Build Your Own Perfume</h2>
           <p class="perfume-copy">Create a custom scent by selecting a top, middle, and base note.</p>
           <div class="perfume-form">
@@ -323,21 +541,84 @@
               <option>Amber</option>
             </select>
 
+            <label for="favoriteNote">Favorite Note</label>
+            <select id="favoriteNote" name="favoriteNote">
+              <option>Bergamot</option>
+              <option>Rose</option>
+              <option>Vanilla</option>
+              <option>Sandalwood</option>
+            </select>
+
             <button id="createPerfumeBtn" type="button">Create My Perfume</button>
           </div>
+
+          <div class="note-mixer animate-on-scroll">
+            <h3>Perfume Lab Mixer</h3>
+            <p>Drag the note chips into the matching slot and watch your blend update.</p>
+            <div class="note-pool">
+              <div class="note-pool-group">
+                <h4>Top notes</h4>
+                <button class="note-chip" draggable="true" data-category="top">Bergamot</button>
+                <button class="note-chip" draggable="true" data-category="top">Lemon</button>
+                <button class="note-chip" draggable="true" data-category="top">Orange</button>
+                <button class="note-chip" draggable="true" data-category="top">Mint</button>
+              </div>
+              <div class="note-pool-group">
+                <h4>Heart notes</h4>
+                <button class="note-chip" draggable="true" data-category="middle">Rose</button>
+                <button class="note-chip" draggable="true" data-category="middle">Jasmine</button>
+                <button class="note-chip" draggable="true" data-category="middle">Lavender</button>
+                <button class="note-chip" draggable="true" data-category="middle">Lily</button>
+              </div>
+              <div class="note-pool-group">
+                <h4>Base notes</h4>
+                <button class="note-chip" draggable="true" data-category="base">Vanilla</button>
+                <button class="note-chip" draggable="true" data-category="base">Sandalwood</button>
+                <button class="note-chip" draggable="true" data-category="base">Cedarwood</button>
+                <button class="note-chip" draggable="true" data-category="base">Amber</button>
+              </div>
+            </div>
+            <div class="mixer-slots">
+              <div class="mixer-slot" data-slot="top" data-label="Top note">Drop top note here</div>
+              <div class="mixer-slot" data-slot="middle" data-label="Heart note">Drop heart note here</div>
+              <div class="mixer-slot" data-slot="base" data-label="Base note">Drop base note here</div>
+            </div>
+            <div class="mixer-preview" id="mixer-preview">
+              <h4>Live scent preview</h4>
+              <p>Drop notes into each slot to see your perfume blend come alive.</p>
+            </div>
+            <button class="button secondary" id="clearMixerBtn" type="button">Reset mixer</button>
+          </div>
+
           <div id="perfume-result" class="perfume-result"></div>
+          <button class="button secondary" id="save-perfume-blend" type="button" style="display: none; margin-top: 1rem;">Save this blend</button>
+          <div id="saved-blends" class="saved-result-card"></div>
         </div>
 
         <section class="info-section" id="about" aria-labelledby="about-title">
           <div class="info-grid">
             <article class="info-card">
               <h2 id="about-title">About this experience</h2>
-              <p>This site celebrates modern fragrance culture through a mix of visual storytelling, fragrance education, and interactive exploration.</p>
+              <p>This site combines fragrance storytelling, Dior Sauvage facts, and interactive scent tools so visitors can learn about notes, performance, and personal scent style.</p>
             </article>
             <article class="info-card" id="contact">
               <h2>Contact</h2>
               <p>Have feedback or a fragrance suggestion? Reach out and share your thoughts.</p>
               <a class="button secondary" href="mailto:hello@fragranceproject.com">Email us</a>
+            </article>
+            <article class="info-card">
+              <h2>Feedback</h2>
+              <p>Share your thoughts on the experience, the quiz, or a favorite scent.</p>
+              <form id="feedback-form">
+                <label for="feedback-name">Name</label>
+                <input id="feedback-name" name="name" type="text" placeholder="Your name" />
+                <label for="feedback-email">Email</label>
+                <input id="feedback-email" name="email" type="email" placeholder="you@example.com" />
+                <label for="feedback-message">Message</label>
+                <textarea id="feedback-message" name="message" rows="4" placeholder="What would you like to share?"></textarea>
+                <button class="button primary" type="submit">Send feedback</button>
+                <p class="feedback-status" id="feedback-status" aria-live="polite"></p>
+              </form>
             </article>
           </div>
         </section>
@@ -346,6 +627,38 @@
         <button type="button" data-action="toggle" aria-pressed="false">Refresh mood</button>
       </section>
     </main>
+
+    <div class="glossary-modal" id="glossaryModal" aria-hidden="true">
+      <div class="glossary-dialog" role="dialog" aria-modal="true" aria-labelledby="glossary-title">
+        <button class="modal-close" id="closeGlossary" type="button" aria-label="Close glossary">×</button>
+        <h2 id="glossary-title">Fragrance glossary</h2>
+        <dl class="glossary-list">
+          <dt>Top Notes</dt>
+          <dd>The first impression of a fragrance, usually bright and refreshing.</dd>
+          <dt>Heart Notes</dt>
+          <dd>The core character of a scent that appears after the top notes fade.</dd>
+          <dt>Base Notes</dt>
+          <dd>The long-lasting foundation that supports the fragrance and holds it together.</dd>
+          <dt>Sillage</dt>
+          <dd>How far the scent projects from the wearer after application.</dd>
+          <dt>Longevity</dt>
+          <dd>How long the fragrance remains noticeable on skin.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-brand">Sauvage Stories</p>
+        <nav aria-label="Footer navigation">
+          <a href="#features">Features</a>
+          <a href="#perfume">Build</a>
+          <a href="perfume-game.html">Perfume Lab</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-note">Viewed <strong id="pageViews">0</strong> times in this browser. Designed as a polished, interactive fragrance showcase.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
